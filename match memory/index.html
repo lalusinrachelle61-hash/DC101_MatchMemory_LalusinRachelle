@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Memory Match (Emoji)</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="stats">
+        <div class="stat">Moves: <span id="moves">0</span></div>
+        <div class="stat">Time: <span id="time">0</span>s</div>
+        <div class="stat">Pairs: <span id="pairs">0</span></div>
+      </div>
+      <div class="controls">
+        <label class="stat">Grid:
+          <select id="gridSize" class="control-select" title="Choose grid">
+            <option value="4x4" selected>4 × 4</option>
+            <option value="2x2">2 × 2</option>
+            <option value="2x4">2 × 4</option>
+            <option value="6x6">6 × 6</option>
+          </select>
+        </label>
+        <button id="restart">Restart</button>
+        <button id="shuffleBtn" class="secondary">Shuffle</button>
+      </div>
+    </div>
+
+    <div id="game" class="game-container" aria-live="polite"></div>
+
+    <div class="footer">
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
